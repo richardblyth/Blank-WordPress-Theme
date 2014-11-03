@@ -1,0 +1,44 @@
+/* FONTS & TYPOGRAPHY */
+
+@Font: sans-serif;
+
+/* Weights */
+@FontThin: 100;
+@FontLight: 300;
+@FontNormal: 400;
+@FontMedium: 500;
+@FontBold: 700;
+
+/* Line Heights */
+@StdLineHeight: 1.3em;
+@HeadLineHeight: 1em;
+
+/* Global Font Styling */
+html {
+	font-size: 100%; /* 16px Approx */
+}
+body {
+	font: @FontNormal 1em @Font;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: @FontThin 3.438em @Font;
+	line-height: @HeadLineHeight;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1.125em;
+	line-height: @StdLineHeight;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	-webkit-transition: color 500ms ease-out 1s;
+	-moz-transition: color 500ms ease-out 1s;
+	-o-transition: color 500ms ease-out 1s;
+	transition: color 0.5s ease;
+}
