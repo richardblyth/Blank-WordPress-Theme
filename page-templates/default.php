@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Default
+ * Template Name: Default Page Template
  * Description: Default page template
  */
 get_header(); ?>
@@ -10,11 +10,15 @@ get_header(); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
         <div class="small-12 columns">
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
+          <header>
+          <?php the_title(); ?>
+          </header>
+          <?php the_content(); ?>
+        </div>
         <?php endwhile; ?>
 
-        <?php else : ?>
+      <?php else : ?>
+        <div class="small-12 columns">
         <h1>Oops!</h1>
         <p>Sorry, but you are looking for something that isn't here.</p>
         </div>
