@@ -13,7 +13,7 @@ function my_jquery_enqueue() {
 function ocaldesign_scripts() {
 	/* CSS here */
 	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/vendor/foundation.min.css', array(), '5' );
-	wp_enqueue_style( 'ocaldesign', get_template_directory_uri() . '/css/main.css', array(), null );
+	wp_enqueue_style( 'maincss', get_template_directory_uri() . '/css/main.css', array(), null );
 
 	//Modernizr
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.min.js', array(), '2.8.2');
@@ -96,5 +96,12 @@ function df_disable_comments_admin_bar() {
 	}
 }
 add_action('init', 'df_disable_comments_admin_bar');
+
+/* Add Additional Menus to the Theme */
+register_nav_menus( array(
+	'top' => __( 'Top Bar Links', 'strettynews' ),
+	'main' => __( 'Main Menu', 'strettynews'),
+	'footer' => __( 'Footer Links', 'strettynews')
+) );
 
 ?>
