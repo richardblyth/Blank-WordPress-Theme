@@ -454,10 +454,10 @@ a:focus {
   clear: both;
 }
 /* IE Specific CSS *//* MEDIA QUERIES */
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 64.063em) {
   
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 40.063em) {
   
 }
 /* RETINA IMAGES */
