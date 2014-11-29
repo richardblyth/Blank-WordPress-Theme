@@ -1,0 +1,29 @@
+/* MIXINS */
+
+/* Border-Radius */
+.RoundBorders (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+/* Box Sizing */
+.BorderBox {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+/* Transitions */
+.AllTransition {
+  transition: all 0.5s ease;
+  -moz-transition: all 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  -webkit-transition: all 500ms ease-out 1s;
+}
+.ColourTransition {
+  transition: color 0.5s ease;  
+  -moz-transition: color 500ms ease-out 1s;
+  -o-transition: color 500ms ease-out 1s;
+  -webkit-transition: color 500ms ease-out 1s;
+}
