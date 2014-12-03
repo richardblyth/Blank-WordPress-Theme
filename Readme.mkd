@@ -1,0 +1,11 @@
+#Simple Website Boilerplate
+This boilerplate has been designed to provide the very basic structure for building a new WordPress theme.
+
+##Features
+* HTML5
+* CSS3
+* PHP includes structure
+* Built on a custom build of Foundation 5
+* Modernizr
+* Normalize.css
+* LESS CSS structure

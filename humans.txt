@@ -7,9 +7,10 @@
     HTML5, CSS3
     jQuery 1.11.1
     Foundation 5.4 Custom
+    Modernizr
 
 # SITE
 	
-	Last update: 2014/11/03
+	Last update: 2014/12/03
 	Language: English
 	Doctype: HTML5

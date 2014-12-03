@@ -22,13 +22,13 @@
   <body>
     <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <header class="row">    
-      <div class="small-12 medium-4 columns">
+      <div class="small-12 medium-4 large-4 columns">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Homepage">Homepage</a>
       </div>
-      <div class="small-12 medium-4 columns">
+      <div class="small-12 medium-4 large-4 columns">
       <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
       </div>
-      <form action="/" method="get" class="small-12 medium-4 columns">
+      <form action="/" method="get" class="small-12 medium-4 large-4 columns">
         <fieldset>
           <label for="search">Search</label>
           <input type="text" name="s" id="search" value="<?php the_search_query(); ?>">

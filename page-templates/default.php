@@ -9,7 +9,7 @@ get_header(); ?>
 
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div class="small-12 columns">
+        <div class="small-12 medium-12 large-12 columns">
           <header>
           <?php the_title(); ?>
           </header>
@@ -18,7 +18,7 @@ get_header(); ?>
         <?php endwhile; ?>
 
       <?php else : ?>
-        <div class="small-12 columns">
+        <div class="small-12 medium-12 large-12 columns">
         <h1>Oops!</h1>
         <p>Sorry, but you are looking for something that isn't here.</p>
         </div>

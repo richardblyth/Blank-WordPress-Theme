@@ -1,5 +1,4 @@
-/* Main Javascript file for oCal Design */
-
+/* Main Javascript File */
 $(document).ready(function(){
 	
 });
