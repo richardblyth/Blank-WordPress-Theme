@@ -24,7 +24,7 @@ function other_scripts() {
 	//Main.js
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.min.js', array('jquery'), '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'ocaldesign_scripts' );
+add_action( 'wp_enqueue_scripts', 'other_scripts' );
 
 /* Remove Unnecessary Meta Tags */
 remove_action( 'wp_head', 'wp_generator' ) ; 
@@ -36,11 +36,6 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head', 'feed_links', 2 ); 
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 
-/* Remove any admin menu items we don't need */
-add_action( 'admin_menu', 'my_remove_menu_pages' );
-function my_remove_menu_pages() {
-	remove_menu_page('edit.php');	/* Posts */
-}
 
 /* Completely Disable Comments and Trackbacks */
 function df_disable_comments_post_types_support() {
