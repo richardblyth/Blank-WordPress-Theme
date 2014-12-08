@@ -10,10 +10,9 @@ function my_jquery_enqueue() {
 }
 
 /* Correctly Enqueue Other Scripts and CSS */
-function ocaldesign_scripts() {
+function other_scripts() {
 	/* CSS here */
-	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/vendor/foundation.min.css', array(), '5' );
-	wp_enqueue_style( 'ptserif', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic"), array(), null );
+	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/vendor/foundation.min.css', array(), null );
 	wp_enqueue_style( 'maincss', get_template_directory_uri() . '/css/main.css', array(), null );
 
 	//Modernizr
