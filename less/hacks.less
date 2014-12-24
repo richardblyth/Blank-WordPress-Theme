@@ -1,12 +1,59 @@
 /* HACKS */
 
+/* Responsive iFrames - height to be defined in other CSS */
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+/* IE8 Browse Happy */
+p.browsehappy {
+  background-color: red;
+  color: white;
+  left: 0;
+  padding: @gutterleft;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+/* No JavaScript */
+html.no-js {
+  div.no-jsmsg {
+    background-color: red;
+    color: white;
+    left: 0;
+    padding: @gutterleft;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  /* List elements to hide if JavaScript is turned off... */
+}
+html.js {
+  div.no-jsmsg {
+    dipslay: none;
+  }
+}
+
+
 /* Remove Safari Focus Outline */
 input:focus { 
 	outline: none;
 }  	
 textarea:focus { 
 	outline: none; 
-}  
+}
+
+/* Prevent textarea resize */
+textarea {
+  resize: none;
+}
 
 /* Remove Firefox Link Outlines */
 a, a:visited, a:active, a:focus { 

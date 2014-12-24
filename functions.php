@@ -94,9 +94,9 @@ add_action('init', 'df_disable_comments_admin_bar');
 
 /* Add Additional Menus to the Theme */
 register_nav_menus( array(
-	'top' => __( 'Top Bar Links', 'strettynews' ),
-	'main' => __( 'Main Menu', 'strettynews'),
-	'footer' => __( 'Footer Links', 'strettynews')
+	'top' => __( 'Top Bar Links', 'themename' ),
+	'main' => __( 'Main Menu', 'themename'),
+	'footer' => __( 'Footer Links', 'themename')
 ) );
 
 ?>

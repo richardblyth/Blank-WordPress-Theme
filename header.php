@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
-    <title>Blank WordPress theme</title>
+    <title><?php wp_title(); ?></title>
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="Richard Blyth">
@@ -20,7 +20,6 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <header class="row">    
       <div class="small-12 medium-4 large-4 columns">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Homepage">Homepage</a>

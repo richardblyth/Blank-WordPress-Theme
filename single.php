@@ -3,8 +3,7 @@
 get_header(); ?>
 
 			<?php if (have_posts()) : ?>
-				<?php while (have_posts()) : the_post(); ?>
-			
+				<?php while (have_posts()) : the_post(); ?>			
 				
 				<header class="row">
 					<div class="small-12 medium-12 large-12 columns">
