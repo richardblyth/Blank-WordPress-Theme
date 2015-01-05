@@ -27,7 +27,7 @@
       <div class="small-12 medium-4 large-4 columns">
       <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
       </div>
-      <form action="/" method="get" class="small-12 medium-4 large-4 columns">
+      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="small-12 medium-4 large-4 columns">
         <fieldset>
           <label for="search">Search</label>
           <input type="text" name="s" id="search" value="<?php the_search_query(); ?>">
