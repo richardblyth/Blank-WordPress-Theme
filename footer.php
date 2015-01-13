@@ -16,6 +16,9 @@
 
     <script>
       $(document).foundation();
+      
+      //Set Template URL Variable
+      var templateUrl = '<?= get_bloginfo("template_url"); ?>';
     </script>
     <?php wp_footer(); ?>
   </body>
