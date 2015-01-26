@@ -1,6 +1,17 @@
 <?php
 /* Search resuts */
 
+//Preserve the search query (for pagination)
+global $query_string;
+
+$query_args = explode("&", $query_string);
+$search_query = array();
+
+foreach($query_args as $key => $string) {
+	$query_split = explode("=", $string);
+	$search_query[$query_split[0]] = urldecode($query_split[1]);
+} // foreach
+
 get_header(); ?>
 
 		<header class="row page-header">
@@ -44,6 +55,13 @@ get_header(); ?>
 				if ($count % 3 == 0) { ?></div><div class="row"><?php } ?>	
 
 			<?php endwhile; ?>
+		</div><!--/row-->
+		
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns pagination clearfix">
+				<div class="nav-previous"><?php next_posts_link( 'Previous' ); ?></div>
+				<div class="nav-next"><?php previous_posts_link( 'Next' ); ?></div>
+			</div>
 		</div><!--/row-->
 
 		<?php else : ?>
