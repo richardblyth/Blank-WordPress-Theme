@@ -10,7 +10,7 @@
     Modernizr
 
 # SITE
-	
-	Last update: 2014/12/03
-	Language: English
-	Doctype: HTML5
+  
+  Last update: 2014/12/03
+  Language: English
+  Doctype: HTML5
