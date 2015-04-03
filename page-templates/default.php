@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Default Page Template
- * Description: Default page template
+ * Template Name: General Page
+ * Description: The default page template
  */
 get_header(); ?>
 

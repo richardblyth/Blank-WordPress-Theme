@@ -90,10 +90,10 @@ add_action('admin_init', 'df_disable_comments_dashboard');*/
 add_action('init', 'df_disable_comments_admin_bar');*/
 
 // Add Additional Menus to the Theme - change 'themename' to match your theme name
-/*register_nav_menus( array(
+register_nav_menus( array(
   'main' => __( 'Main Menu', 'themename'),
   'footer' => __( 'Footer Links', 'themename')
-) );*/
+) );
 
 // Nicetrim - for text previews
 /*function nicetrim ($input, $length) { */
@@ -120,11 +120,11 @@ function my_custom_sizes( $sizes ) {
   ));
 }*/
 
-// Hide the WordPress Admin Bar on the front end
-/*add_filter('show_admin_bar', ‘__return_false');*/
-
 //Custom WP Admin Login logo
 /*function custom_admin_logo() { echo ' <style type="text/css"> #header-logo { background-image: url('.get_bloginfo('stylesheet_directory').'/img/logo.png) !important; } </style> '; 
 }
 add_action('admin_head', 'custom_admin_logo');*/
+
+// Hide the WordPress Admin Bar on the front end (when admin is logged in)
+/*add_filter('show_admin_bar', '__return_false');*/
 ?>
