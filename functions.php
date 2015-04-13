@@ -125,6 +125,11 @@ function my_custom_sizes( $sizes ) {
 }
 add_action('admin_head', 'custom_admin_logo');*/
 
+//Remove User Roles we're not using
+/*remove_role( 'contributor' );
+remove_role( 'editor' );
+remove_role( 'subscriber' );*/
+
 // Hide the WordPress Admin Bar on the front end (when admin is logged in)
 /*add_filter('show_admin_bar', '__return_false');*/
 ?>

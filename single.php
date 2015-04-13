@@ -21,6 +21,9 @@ get_header(); ?>
           </div>
         </article>
 
+        <?php //Comment form 
+        comments_template('/partials/comments.php'); ?>
+
         <?php endwhile; ?>
 
       <?php else : ?>
