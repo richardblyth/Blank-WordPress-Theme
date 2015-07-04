@@ -20,7 +20,7 @@ function other_scripts() {
   wp_enqueue_script( 'foundationjs', get_template_directory_uri() . '/js/vendor/foundation.min.js', array('jquery'), '5.5.1' );
   
   //End of document Scripts
-  wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true );
+  wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main-dist.js', array('jquery'), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'other_scripts' );
 
@@ -132,4 +132,12 @@ remove_role( 'subscriber' );*/
 
 // Hide the WordPress Admin Bar on the front end (when admin is logged in)
 /*add_filter('show_admin_bar', '__return_false');*/
+
+
+//Make Custom Posts Show in Category.php, Archive.php etc.
+/*function add_custom_types_to_tax( $query ) { 
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $post_types = get_post_types(); $query->set( 'post_type', $post_types ); return $query; }
+  }
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );*/
 ?>
